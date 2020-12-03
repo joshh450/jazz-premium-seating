@@ -1,4 +1,4 @@
-### Utah Jazz Premium Seating Pages
+# Utah Jazz Premium Seating Pages
 
 This project was built as part of the interview process with the Utah Jazz. The designs for the project can be found at the following link: https://xd.adobe.com/view/34c0425d-bfd2-49a8-a78b-30edd136cee8-6193/
 
