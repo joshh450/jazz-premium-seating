@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utah Jazz Premium Seating</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script src="https://kit.fontawesome.com/054e6891ea.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/global.css"></link>
+    <link rel="stylesheet" type="text/css" href="styles/home.css"></link>
+    <link rel="stylesheet" type="text/css" href="styles/detail.css"></link>
+</head>
+<body>
+      <script type="text/babel">
+        const App = () => { 
+            const [home, setHome] = React.useState(true)
+            const examples = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+            const possibleUses = [
+                [
+                    'Client Entertainment',
+                    'Relationship Development',
+                    'Generate Referrals by Inviting Clients to Bring Colleagues & Friends'
+                ],
+                [
+                    'Renew Accounts',
+                    'Reduce Attrition',
+                    'Relationship Development',
+                    'Current Customer Upsell',
+                    'New Product/Service Launch'
+                ],
+                [
+                    'Employee Recruitment & Retention',
+                    'Employee Benefit Programs',
+                    'Employee Incentives',
+                    'Internal Contests',
+                    'Team Building',
+                    'Employee Families',
+                    'Holiday Events/Parties',
+                    'Conferences'
+                ],
+                [
+                    'Executive Team Building',
+                    'Quarterly Meetings',
+                    'Investors & Shareholders',
+                    'Personal Entertainment'
+                ],
+                [
+                    'Complement Current Charitable Programs',
+                    'Donate for Auctions or Raffles',
+                    'Host 501(c)(3) Organizations'
+                ]
+            ]
+            const benefits = [
+                [
+                    'Private Suite',
+                    '420–490 square feet depending on the location',
+                    'Lounge seating area for four with coffee table at the back of suite',
+                    'High-top counter in middle, and drink rails at the back of the fixed-seating area',
+                    'Dedicated suite attendant for each game and arena event'
+                ],
+                [
+                    'Flat screen TV in each suite',
+                    'WiFi access',
+                    '18–32 tickets in a luxury suite (varies by location)',
+                    'VIP parking passes',
+                    'Food credit for catering to both Utah Jazz games and arena events'
+                ]
+            ]
+                                            
+            React.useEffect(() => {
+                window.scrollTo(0, 0)
+            }, [home])
+
+            const mappedExamples = examples.map((example, i) => {
+                return (
+                    <div key={i} className="seating-options-bg">
+                        <div onClick={() => setHome(false)}>
+                            EXAMPLE {i + 1}
+                        </div>
+                    </div>
+                )
+            })
+
+            const mappedPossibleUses = possibleUses.map((uses, i) => {
+                return (uses.map((use, i) => {
+                    return (
+                        <li key={i}>{use}</li>
+                    )
+                }))
+            })
+
+            const mappedBenefits = benefits.map((benefitList, i) => {
+                return (benefitList.map((benefit, i) => {
+                    return (
+                        <div key={i} className="benefits-parking-item">
+                            <i className="fas fa-check-circle blue-icon" /> 
+                            <span>{benefit}</span>
+                        </div>
+                    )
+                }))
+            })
+
+            return (
+              <div className={`${!home && 'detail-body-wrap'}`}>
+
+                <section className={`header-wrap ${!home && 'detail-header'}`}>
+                    <header>
+                        <nav className="premium-seating-logo" onClick={() => setHome(true)}>
+                            <img className="note-logo" src="images/logo.png" alt="jazz-note" />
+                            <h1 className="premium-seating-header">
+                                UTAH JAZZ PREMIUM SEATING
+                            </h1>
+                        </nav>
+                        <nav className="navlinks">
+                            <a className="navlink" href="#">
+                                LUXURY SUITES
+                                <i className="fas fa-caret-down white-icon" />
+                            </a>
+                            <a className="navlink" href="#">
+                                EXCLUSIVE CLUBS
+                                <i className="fas fa-caret-down white-icon" />
+                            </a>
+                            <a className="navlink" href="#contact">
+                                CONTACT US
+                            </a>
+                        </nav>
+                    </header>
+                </section>
+
+                {home ?
+                    <div>
+                        <section className="players-bg"></section>
+
+                        <section className="hero-content">
+                            <h1>PREMIUM SEATING</h1>
+                            <h2>THE BEST WAY TO ENJOY ALL THE EXCITEMENT</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut nisi explicabo repellendus, saepe quisquam eveniet, quas magni voluptatibus vitae. Provident, laudantium corporis quam voluptate temporibus illo.</p>
+                            <a className="navlink" href="#contact">
+                                <button>CONTACT US</button>
+                            </a>
+                        </section>
+
+                        <section className="learn-more-wrap">
+                            <article>
+                                <aside>
+                                    <img src="images/suites.jpg" alt="suites"/>
+                                    <div className="learn-more-content">
+                                        <h3>LUXURY SUITES</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quam accusamus, quod, architecto, repudiandae dolorum deserunt dolore ipsa corporis quo voluptate voluptas quos saepe odit eius id.</p>
+                                        <button onClick={() => setHome(false)}>LEARN MORE</button>
+                                    </div>
+                                </aside>
+                                <aside>
+                                    <img src="images/clubs.jpg" alt="clubs"/>
+                                    <div className="learn-more-content">
+                                        <h3>EXCLUSIVE CLUBS</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Porro cumque, id, et placeat suscipit atque nobis deserunt explicabo doloremque aliquid, consectetur.</p>
+                                        <button>LEARN MORE</button>
+                                    </div>
+                                </aside>
+                            </article>
+                        </section>
+
+                        <section className="explore-options-wrap">
+                            <div className="explore-options-content">
+                                <h2>EXPLORE OUR PREMIUM SEATING OPTIONS</h2>
+                                <section className="explore-options-suites">
+                                    {mappedExamples}
+                                </section>
+                            </div>
+                        </section>
+
+                        <section className="one-hundred-club">
+                            <div>
+                                <article>
+                                    <h2>UTAH JAZZ 100 CLUB</h2>
+                                    <span>One of the most premier clubs in the state of Utah.</span>
+                                    <p>The Jazz 100 Club is an elite membership with the Utah Jazz that operates like a personal seat license with a guaranteed value. Consisting only of seats located in the first five rows from the court, 100 Club members enjoy the best seats and some of the most exclusive perks in Vivint Smart Home Arena and throughout the National Basketball Association (NBA). The Jazz 100 Club is uniquely governed by a member-based advisory board in conjunction with senior leadership from Larry H. Miller Sports & Entertainment. Jazz 100 Club members enjoy an unparalleled comradery and network as home to many of the most prominent and successful business and community leaders in the Western United States.</p>
+                                    <a href="#">Click here for more information.</a>
+                                </article>
+                                <figure>
+                                    <img src="images/100club.jpg" alt="100 Club"/>
+                                </figure>
+                            </div>
+                        </section>
+                    </div> 
+                    : 
+                    <div>
+                        <section className="suite-level-header">
+                            <article>
+                                <h1>
+                                    EIDE BAILLY SUITE LEVEL
+                                </h1>
+                                <div>
+                                    <button>
+                                        <i className="far fa-file-pdf orange-icon" />
+                                        DOWNLOAD INFO
+                                    </button>
+                                    <a href="#contact">
+                                        <button>
+                                            CONTACT US
+                                        </button>
+                                    </a>
+                                </div>
+                            </article>
+                        </section>
+
+                        <section className="suite-level-carousel">
+                            <section className="suite-level-image">
+                                <aside className="carousel-arrows">
+                                    <i className="fas fa-chevron-left orange-icon" />
+                                    <i className="fas fa-chevron-right orange-icon" />
+                                </aside>
+                                <aside className="carousel-dots">
+                                    <span />
+                                    <span />
+                                    <span />
+                                </aside>
+                            </section>
+                            <article>
+                                <div>
+                                    <aside className="info-icon-wrap">
+                                        <i className="fas fa-info orange-icon" />
+                                    </aside>
+                                    <p>Did you know? Whether you're closing an important business deal or celebrating with your employees, renting a suite for a Jazz game is perfect for any occasion. Call or text 801.325.2203 to learn more.</p>
+                                </div>
+                            </article>
+                        </section>
+
+                        <section className="about">
+                            <article>
+                                <h2>
+                                    ABOUT
+                                </h2>
+                                <aside>
+                                    <i className="fas fa-street-view blue-icon" />
+                                    <h3>Location</h3>
+                                    <div>
+                                        <p>Suite Level (Level 4)</p>
+                                        <button className="btn-orange-bg">VIEW ARENA MAP</button>
+                                    </div>
+                                </aside>
+                                <aside>
+                                    <i className="fas fa-users blue-icon" />
+                                    <h3>Capacity</h3>
+                                    <div>
+                                        <p>Accommodates 18–32 people</p>
+                                    </div>
+                                </aside>
+                                <aside>
+                                    <i className="far fa-lightbulb blue-icon" />
+                                    <h3>Event Availability</h3>
+                                    <div>
+                                        <p>Utah Jazz Games (including playoffs)</p>
+                                        <p>Concerts and select special events</p>
+                                    </div>
+                                </aside>
+                            </article>
+                        </section>
+
+                        <section className="benefits">
+                            <article>
+                                <h2>
+                                    <div className="benefits-parking-header">
+                                        BENEFITS & AMENITIES
+                                    </div>
+                                </h2>
+                                <aside>
+                                    {mappedBenefits[0]}
+                                </aside>
+                                <aside>
+                                    {mappedBenefits[1]}
+                                </aside>
+                            </article>
+                        </section>
+
+                        <section className="parking">
+                            <article>
+                                <h2>
+                                    <div className="benefits-parking-header">
+                                        PARKING & CHECK-IN
+                                    </div>
+                                </h2>
+                                <aside>
+                                    <div className="benefits-parking-item">
+                                        <i className="fas fa-car-alt blue-icon" />
+                                        <span>
+                                            <p>
+                                                VIP parking in the Park Place lot located right next to Vivint Smart Home Arena
+                                            </p>
+                                            <button className="btn-orange-bg">VIEW PARKING MAP</button>
+                                        </span>
+                                    </div>
+                                </aside>
+                                <aside>
+                                    <div className="benefits-parking-item">
+                                        <i className="fas fa-map-signs blue-icon" />
+                                        <span>
+                                            <p>
+                                                Easy check-in: Talk to the host at any suite level (level 4) entrance to check-in
+                                            </p>
+                                            <button className="btn-orange-bg">VIEW CHECK-IN LOCATIONS</button>
+                                        </span>
+                                    </div>
+                                </aside>
+                            </article>
+                        </section>
+
+                        <section className="possible-uses">
+                            <article>
+                                <h2>
+                                    <i className="fas fa-plus-circle orange-icon" />
+                                    POSSIBLE USES
+                                </h2>
+                                <aside>
+                                    <div className="possible-uses-section">
+                                        <h3>
+                                            <div className="possible-uses-header">
+                                                Business Development
+                                            </div>
+                                        </h3>
+                                        <ul>
+                                            {mappedPossibleUses[0]}
+                                        </ul>
+                                    </div>
+                                    <div className="possible-uses-section">
+                                        <h3>
+                                            <div className="possible-uses-header">
+                                                Client Retention
+                                            </div>
+                                        </h3>
+                                        <ul>
+                                            {mappedPossibleUses[1]}
+                                        </ul>
+                                    </div>
+                                    <div className="possible-uses-section">
+                                        <h3>
+                                            <div className="possible-uses-header">
+                                                Employee Usage
+                                            </div>
+                                        </h3>
+                                        <ul>
+                                            {mappedPossibleUses[2]}
+                                        </ul>
+                                    </div>
+                                    <div className="possible-uses-section">
+                                        <h3>
+                                            <div className="possible-uses-header">
+                                                Executive Utilization
+                                            </div>
+                                        </h3>
+                                        <ul>
+                                            {mappedPossibleUses[3]}
+                                        </ul>
+                                    </div>
+                                    <div className="possible-uses-section">
+                                        <h3>
+                                            <div className="possible-uses-header">
+                                                Community Relations
+                                            </div>
+                                        </h3>
+                                        <ul>
+                                            {mappedPossibleUses[4]}
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </article>
+                        </section>
+
+                        <section className="food-and-beverage">
+                            <h2>
+                                EXPERIENCE WORLD-CLASS FOOD AND BEVERAGE OPTIONS
+                            </h2>
+                        </section>
+                    </div>
+                }
+
+                <footer id="contact" className="contact-us">
+                    <article>
+                        <div>
+                            <h2>CONTACT US</h2>
+                                <a className="phone" href="tel:801.325.2203">
+                                    <i className={`fas fa-phone-square-alt ${home ? 'orange-icon' : 'blue-icon'}`} />
+                                    801.325.2203
+                                </a>
+                                <a className="email" href="mailto:premium@utahjazz.com"> 
+                                    <i className={`fas fa-envelope ${home ? 'orange-icon' : 'blue-icon'}`} />
+                                    <span>premium@utahjazz.com</span>
+                                </a>
+                            <p>With options like single-game tickets, suite rentals and special group rates, experiencing Utah Jazz basketball has never been more convenient! Just let us know what you're interested in and we can customize a package to fit your group and budget.</p>
+                        </div>
+                        <form>
+                            <aside>
+                                <label>
+                                    User Input
+                                    <input type="text" />
+                                </label>
+                                <label>
+                                    User Input
+                                    <input type="text" />
+                                </label>
+                                <label>
+                                    User Input
+                                    <input type="text" />
+                                </label>
+                                <label>
+                                    Options
+                                    <select required>
+                                        <option value="" selected disabled hidden>Select...</option>
+                                        <option value="Option 1">Option 1</option>
+                                        <option value="Option 2">Option 2</option>
+                                        <option value="Option 3">Option 3</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    Short Text
+                                    <textarea></textarea>
+                                </label>
+                                <button>
+                                    <i className="fas fa-check-circle" />
+                                    SEND INQUIRY
+                                </button>
+                            </aside>
+                        </form>
+                    </article>
+                </footer>
+              </div>
+            )
+          }
+        ReactDOM.render(<App />, document.getElementById('root'))
+      </script>
+    <div id="root"></div>
+</body>
+</html>

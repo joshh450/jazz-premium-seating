@@ -1,0 +1,223 @@
+.players-bg {
+    position: absolute;
+    background-image: url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 45%;
+    width: 100vw;
+    height: 600px;
+    z-index: -1;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    width: 100vw;
+    background-color: rgb(18, 34, 61, .5);
+}
+
+.hero-content h1 {
+    margin: 0px;
+    font-size: 55px;
+}
+
+.hero-content h2 {
+    margin: 15px 0px 20px 0px;
+    font-size: 32px;
+    font-weight: 300;
+    color: rgb(245, 156, 39);
+}
+
+.hero-content p {
+    width: 80vw;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero-content button {
+    margin-top: 25px;
+    padding: 8px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: transparent;
+}
+
+.learn-more-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.learn-more-wrap article {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin-top: -80px;
+}
+
+.learn-more-wrap aside {
+    position: relative;
+    width: 49%;
+    height: 500px;
+}
+
+.learn-more-wrap aside img {
+    width: 100%;
+    max-height: 500px;
+}
+
+.learn-more-content {
+    position: absolute;
+    bottom: 0;
+    height: calc(50% - 35px);
+    width: calc(100% - 70px);
+    padding: 35px 35px 0 35px;
+    background-color: rgb(18, 34, 61);
+}
+
+.learn-more-content h3 {
+    margin: 0 0 15px 0;
+    font-size: 26px;
+    font-weight: 300;
+    color: rgb(245, 156, 39);
+}
+
+.learn-more-content p {
+    font-size: 18px;
+}
+
+.learn-more-content button {
+    padding: 8px 20px;
+    border: 1px solid rgb(245, 156, 39);
+    border-radius: 4px;
+    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(245, 156, 39);
+    background-color: transparent;
+}
+
+.explore-options-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+    margin-top: 50px;
+    background-color: rgb(18, 34, 61);
+}
+
+.explore-options-content {
+    width: 80vw;
+}
+
+.explore-options-content h2 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(245, 156, 39);
+}
+
+.explore-options-suites {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.seating-options-bg {
+    background-image: url('../images/loge-box.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.seating-options-bg div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    font-size: 26px;
+    font-weight: 400;
+    background-color: rgb(0, 0, 0, .5);
+}
+
+.seating-options-bg div:hover {
+    cursor: pointer;
+}
+
+.one-hundred-club {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100vw;
+}
+
+.one-hundred-club div {
+    display: flex;
+    width: 80vw;
+}
+
+.one-hundred-club article {
+    width: 50%;
+}
+
+.one-hundred-club figure {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    margin: 0;
+}
+
+.one-hundred-club h2 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(18, 34, 61);
+}
+
+.one-hundred-club span, .one-hundred-club p {
+    font-size: 18px;
+    color: black;
+}
+
+.one-hundred-club span {
+    font-weight: bold;
+}
+
+.one-hundred-club p {
+    font-weight: 400;
+}
+
+.one-hundred-club a {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(245, 156, 39);
+}
+
+.one-hundred-club img {
+    width: 35vw;
+}
+
+select:invalid, select option[value=""] {
+    color: rgb(183, 183, 183);
+}
+
+@media(max-width: 1024px) {
+    .learn-more-content p {
+        font-size: 15px;
+    }
+}

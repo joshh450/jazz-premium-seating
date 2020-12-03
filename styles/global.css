@@ -1,0 +1,222 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: white;
+}
+
+body, button, input, select, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+button, input, select, textarea {
+    padding-left: 5px;
+    color: rgb(18, 34, 61);
+    font-size: 18px;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    height: 60px;
+    width: 80vw;
+    border-bottom: 1px solid white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.premium-seating-logo:hover {
+    cursor: pointer;
+}
+
+.premium-seating-header {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.note-logo {
+    width: 50px;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.navlink {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(245, 156, 39);
+    text-decoration: none;
+}
+
+.white-icon {
+    color: white;
+}
+
+.orange-icon {
+    color: rgb(245, 156, 39);
+}
+
+.blue-icon {
+    color: rgb(164, 198, 250);
+}
+
+.btn-orange-bg {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(18, 34, 61);
+    background-color: rgb(245, 156, 39);
+}
+
+.fa-caret-down {
+    margin-left: 4px;
+    font-size: 17px;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(18, 34, 61);
+}
+
+.contact-us article {
+    display: flex;
+    width: 80vw;
+}
+
+.contact-us div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 10vh;
+}
+
+.contact-us h2 {
+    margin: 0 0 30px 0;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.contact-us a {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-us i {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.contact-us .phone {
+    margin-bottom: 30px;
+}
+
+.contact-us .email {
+    font-size: 22px;
+}
+
+.contact-us span {
+    text-decoration: underline;
+}
+
+.contact-us p {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.contact-us label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: rgb(224, 226, 230);
+}
+
+.contact-us aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 500px;
+}
+
+.contact-us input, .contact-us select {
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+}
+
+.contact-us input {
+    margin-top: 5px;
+}
+
+.contact-us select {
+    background-color: white;
+}
+
+.contact-us textarea {
+    height: 70px;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-us button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(18, 34, 61);
+    background-color: rgb(245, 156, 39);
+}
+
+select, select option {
+    color: #000000;
+}
+  
+select {
+    padding-left: 10px;
+    font-size: 14px;
+}

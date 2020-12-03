@@ -1,0 +1,332 @@
+.detail-body-wrap {
+    background-color: rgb(18, 34, 61);
+}
+
+.detail-header {
+    position: static;
+    border-bottom: 2px solid white;
+}
+
+.detail-header header {
+    border-bottom: none;
+}
+
+.suite-level-header {
+    display: flex;
+    justify-content: center;
+}
+
+.suite-level-header article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+}
+
+.suite-level-header h1 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.suite-level-header div {
+    display: flex;
+    justify-content: space-between;
+    width: 335px;
+}
+
+.suite-level-header button {
+    padding: 8px 15px;
+    border: 1px solid rgb(245, 156, 39);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: transparent;
+}
+
+.suite-level-header i {
+    margin-right: 4px;
+    font-size: 18px;
+}
+
+.suite-level-image {
+    background-image: url('../images/suite-detail.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    position: relative;
+    width: 100vw;
+    height: calc(100% - 132px);
+}
+
+.suite-level-carousel {
+    height: calc(100vh - 164px);
+}
+
+.carousel-arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    margin: 0 40px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+.carousel-dots span {
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgb(196, 196, 196);
+}
+
+.carousel-dots span:first-child {
+    background-color: rgb(245, 156, 39);
+}
+
+.carousel-arrows i {
+    font-size: 60px;
+}
+
+.suite-level-carousel article {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(245, 156, 39);
+}
+
+.suite-level-carousel div {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    padding: 25px 0;
+    color: rgb(18, 34, 61);
+}
+
+.info-icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    background-color: rgb(18, 34, 61);
+}
+
+.info-icon-wrap i {
+    font-size: 30px;
+}
+
+.suite-level-carousel p {
+    margin: 0 0 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.about article {
+    display: flex;
+    width: 80vw;
+    padding: 20px 0 60px 0;
+    border-bottom: 1px solid rgb(164, 198, 250);
+}
+
+.about aside {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    grid-template-rows: 30px 1fr;
+}
+
+.about h2, .about aside {
+    width: 25%;
+}
+
+.about h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.about i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.about h3 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.about div {
+    grid-column: 2/3;
+    width: 80%;
+}
+
+.about p {
+    margin: 15px 0;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.benefits, .parking {
+    display: flex;
+    justify-content: center;
+}
+
+.benefits article, .parking article {
+    display: flex;
+    width: 80vw;
+    padding: 40px 0 0 0;
+    border-bottom: 1px solid rgb(164, 198, 250);
+}
+
+.benefits h2, .parking h2  {
+    width: 25%;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.benefits aside, .parking aside  {
+    width: 37.5%;
+}
+
+.benefits-parking-header {
+    width: 70%;
+}
+
+.benefits-parking-item {
+    display: flex;
+    width: 85%;
+    margin: 25px 0px;
+    font-size: 18px;
+}
+
+.benefits-parking-item:nth-child(1) {
+    margin-top: 0;
+}
+
+.benefits i {
+    margin-top: 2px;
+    font-size: 20px;
+}
+
+.benefits span, .parking span  {
+    margin-left: 10px;
+}
+
+.parking i {
+    margin-top: 2px;
+    font-size: 24px;
+}
+
+.parking p {
+    margin: 0;
+}
+
+.parking button {
+    margin: 20px 0 10px 0;
+}
+
+.possible-uses {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.possible-uses article {
+    width: 80vw;
+}
+
+.possible-uses h2 {
+    margin: 30px 0 50px 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.possible-uses i {
+    margin-right: 15px;
+    font-size: 32px;
+}
+
+.possible-uses aside {
+    display: flex;
+    justify-content: space-between;
+}
+
+.possible-uses-section {
+    width: 17%;
+}
+
+.possible-uses-header {
+    width: 60%;
+    padding-bottom: 12px;
+}
+
+.possible-uses h3 {
+    margin: 0;
+    padding-left: 2px;
+    border-bottom: 1px solid rgb(164, 198, 250);
+    font-size: 22px;
+}
+
+.possible-uses ul {
+    list-style: none;
+    padding: 0;
+}
+
+.possible-uses li {
+    margin: 12px 0;
+    padding-left: 2px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.food-and-beverage {
+    background-image: url('../images/food-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 28%;
+    position: relative;
+    height: 400px;
+}
+
+.food-and-beverage h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    margin: 0;
+    font-weight: 400;
+    background-color: rgb(0, 0, 0, .7);
+}
+
+@media(max-width: 1024px) {
+    .about h3 {
+        font-size: 22px;
+    }
+    .about div {
+        width: 90%;
+    }
+    .about p {
+        font-size: 16px;
+    }
+}
